@@ -19,9 +19,6 @@ class MatchRepository {
     }
 
     public Match getMatchByID(int id) {
-        if (id == null) {
-            return null;
-        }
         return matches.Where(m => m.Id == id).FirstOrDefault();
     }
 
